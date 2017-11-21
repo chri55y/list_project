@@ -1,0 +1,2 @@
+class ListHierarchyRelationship < ApplicationRecord
+end
