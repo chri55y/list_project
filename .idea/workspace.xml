@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42d4532a-5ee2-4e2e-943c-d48ea16b3e61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171121042227_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20171121042227_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="42d4532a-5ee2-4e2e-943c-d48ea16b3e61" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511234194477</updated>
       <workItem from="1511234195994" duration="289000" />
-      <workItem from="1511236354563" duration="2380000" />
+      <workItem from="1511236354563" duration="2654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2669000" />
+    <option name="totallyTimeSpent" value="2943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="697" y="0" width="1231" height="1038" extended-state="0" />
