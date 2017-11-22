@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121190353) do
+ActiveRecord::Schema.define(version: 20171121213137) do
 
   create_table "attachments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "list_item_id"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20171121190353) do
 
   create_table "linked_accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "list_hierarchy_relationships", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "parent_list_id"
+    t.integer "child_list_id"
+    t.boolean "active"
+    t.integer "position"
+    t.boolean "primary_custody"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
