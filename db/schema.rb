@@ -26,11 +26,13 @@ ActiveRecord::Schema.define(version: 20171121213137) do
   end
 
   create_table "list_hierarchy_relationships", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "parent_list_id"
-    t.integer "child_list_id"
+    t.integer "parent_item_id"
+    t.integer "child_item_id"
     t.boolean "active"
+    t.integer "status"
     t.integer "position"
     t.boolean "primary_custody"
+    t.text "relationship_notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
