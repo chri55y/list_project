@@ -17,8 +17,8 @@
       <file leaf-file-name="20171121213137_create_list_hierarchy_relationships.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="-228">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -283,12 +283,12 @@
       <workItem from="1511236354563" duration="4373000" />
       <workItem from="1511286369156" duration="1531000" />
       <workItem from="1511289737741" duration="8385000" />
-      <workItem from="1517159475407" duration="20882000" />
+      <workItem from="1517159475407" duration="22511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35460000" />
+    <option name="totallyTimeSpent" value="37089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="428" y="0" width="1500" height="1038" extended-state="0" />
@@ -551,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="-228">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

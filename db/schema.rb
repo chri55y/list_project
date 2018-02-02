@@ -10,6 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171121213137) do
 
+  create_table "attachments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "list_item_id"
+    t.bigint "linked_account_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["linked_account_id"], name: "index_attachments_on_linked_account_id"
+    t.index ["list_item_id"], name: "index_attachments_on_list_item_id"
+  end
+
+  create_table "linked_accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_linked_accounts_on_user_id"
+  end
+
+  create_table "list_hierarchy_relationships", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "parent_id"
+    t.bigint "child_id"
+    t.boolean "active"
+    t.integer "status"
+    t.integer "position"
+    t.boolean "primary_custody"
+    t.text "relationship_notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "fk_rails_737b280752"
+    t.index ["parent_id"], name: "fk_rails_e1d4d0c82d"
+  end
+
+  create_table "list_items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "list_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "list_item_id"
+    t.bigint "user_id"
+    t.string "permissions"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_item_id"], name: "index_list_users_on_list_item_id"
+    t.index ["user_id"], name: "index_list_users_on_user_id"
+  end
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "username", limit: 25
+    t.string "first_name", limit: 25
+    t.string "last_name", limit: 50
+    t.string "email", default: "", null: false
+    t.string "password", limit: 40
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "list_hierarchy_relationships", "list_items", column: "child_id"
+  add_foreign_key "list_hierarchy_relationships", "list_items", column: "parent_id"
 end

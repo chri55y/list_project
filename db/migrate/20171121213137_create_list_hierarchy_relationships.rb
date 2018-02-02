@@ -13,7 +13,11 @@ class CreateListHierarchyRelationships < ActiveRecord::Migration[5.1]
       # t.references  (:list_items, :parent)
       # t.references  (:list_items, :child)
 
-      t.integer "parent_id", "child_id"
+      # t.integer :parent_id
+      # t.integer "child_id"
+
+      t.integer :parent_id, :limit => 8
+      t.integer :child_id, :limit => 8
 
 
       t.boolean "active"
@@ -32,6 +36,7 @@ class CreateListHierarchyRelationships < ActiveRecord::Migration[5.1]
 
     # add_foreign_key :list_hierarchy_relationships, :list_items, column: parent_id, primary_key: :id
     # add_foreign_key :list_hierarchy_relationships, :list_items, column: child_id, primary_key: :id
+
     add_foreign_key :list_hierarchy_relationships, :list_items, column: :parent_id, primary_key: :id
     add_foreign_key :list_hierarchy_relationships, :list_items, column: :child_id, primary_key: :id
 
