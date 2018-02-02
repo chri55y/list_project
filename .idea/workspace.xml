@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d4532a-5ee2-4e2e-943c-d48ea16b3e61" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb" afterPath="$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
@@ -18,11 +17,9 @@
       <file leaf-file-name="20171121213137_create_list_hierarchy_relationships.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <marker date="1517533263703" expanded="true" signature="789:987" ph="##..." />
-              </folding>
+            <state relative-caret-position="-291">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -286,12 +283,12 @@
       <workItem from="1511236354563" duration="4373000" />
       <workItem from="1511286369156" duration="1531000" />
       <workItem from="1511289737741" duration="8385000" />
-      <workItem from="1517159475407" duration="20143000" />
+      <workItem from="1517159475407" duration="20882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34721000" />
+    <option name="totallyTimeSpent" value="35460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="428" y="0" width="1500" height="1038" extended-state="0" />
@@ -332,9 +329,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1517533263703" expanded="true" signature="789:987" ph="##..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -556,11 +551,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171121213137_create_list_hierarchy_relationships.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <marker date="1517533263703" expanded="true" signature="789:987" ph="##..." />
-          </folding>
+        <state relative-caret-position="-291">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -32,6 +32,8 @@ class CreateListHierarchyRelationships < ActiveRecord::Migration[5.1]
 
     # add_foreign_key :list_hierarchy_relationships, :list_items, column: parent_id, primary_key: :id
     # add_foreign_key :list_hierarchy_relationships, :list_items, column: child_id, primary_key: :id
+    add_foreign_key :list_hierarchy_relationships, :list_items, column: :parent_id, primary_key: :id
+    add_foreign_key :list_hierarchy_relationships, :list_items, column: :child_id, primary_key: :id
 
   end
 end
