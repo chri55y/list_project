@@ -67,3 +67,6 @@ gem 'rspec'
 gem 'rubocop'
 gem 'pundit'
 gem 'devise'
+
+# temporary
+gem 'seed_dump'
