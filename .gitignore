@@ -19,5 +19,5 @@
 .byebug_history
 
 # custom ignores
-
+/db/db_seeds_archive/*
 .idea/workspace.xml
