@@ -17,3 +17,7 @@
 /yarn-error.log
 
 .byebug_history
+
+# custom ignores
+
+.idea/workspace.xml
