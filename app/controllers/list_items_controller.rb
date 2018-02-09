@@ -1,14 +1,20 @@
 class ListItemsController < ApplicationController
-  def index,
+=begin  ############################################
+  CH 2018.2.9
+        used commas instead of spaces between views when generateing controller
+
+=end    ############################################
+
+  def index
   end
 
-  def show,
+  def show
   end
 
-  def new,
+  def new
   end
 
-  def edit,
+  def edit
   end
 
   def delete
