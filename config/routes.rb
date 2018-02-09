@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'list_users/index'
+
+  get 'list_users/show'
+
+  get 'list_users/new'
+
+  get 'list_users/edit'
+
+  get 'list_users/delete'
+
   resources :users do
     member do
       get :delete
