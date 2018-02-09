@@ -20,14 +20,14 @@ class ListItem < ApplicationRecord
   # # ***************************************************************************
 
   #
-  # # par.children =>  null   ON `list_items`.`id` = `LHR`.`child_id` WHERE `LHR`.`child_id` = 1
+  # # par.children =>  CHI*   ON `list_items`.`id` = `LHR`.`child_id` WHERE `LHR`.`parent_id` = 1
   # # par.parents  =>  null*  ON `list_items`.`id` = `LHR`.`parent_id` WHERE `LHR`.`child_id` = 1
   # # chi.parents  =>  PAR*   ON `list_items`.`id` = `LHR`.`parent_id` WHERE `LHR`.`child_id` = 2
-  # # chi.children =>  self   ON `list_items`.`id` = `LHR`.`child_id` WHERE `LHR`.`child_id` = 2
-  # has_many :list_hierarchy_relationships, :foreign_key => :parent_id, :class_name => "ListHierarchyRelationship"
-  has_many :parents, :through => :list_hierarchy_relationships , :source => :parent
-  has_many :list_hierarchy_relationships, :foreign_key => :child_id, :class_name => "ListHierarchyRelationship"
-  has_many :children, :through =>  :list_hierarchy_relationships, :inverse_of => :parent
+  # # chi.children =>  null*  ON `list_items`.`id` = `LHR`.`child_id` WHERE `LHR`.`parent_id` = 2
+  has_many :is_child_relationships, :foreign_key => :child_id, :class_name => "ListHierarchyRelationship"
+  has_many :parents, :through => :is_child_relationships , :source => :parent
+  has_many :is_parent_relationships, :foreign_key => :parent_id, :class_name => "ListHierarchyRelationship"
+  has_many :children, :through =>  :is_parent_relationships, :source => :child
 
   # switch order of declaration (would expect to make .children work)
   # => yes: worked as expected
