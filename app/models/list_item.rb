@@ -3,6 +3,7 @@ class ListItem < ApplicationRecord
   has_many :list_users
   has_many :users, :through => :list_users
 
+  # LHR association scratch work
   # reference: https://medium.com/@jbmilgrom/active-record-many-to-many-self-join-table-e0992c27c1e
   # par, chi = ListItem.find(1,2)
   # par.children  par.parents   chi.parents chi.children
@@ -29,6 +30,8 @@ class ListItem < ApplicationRecord
   has_many :is_parent_relationships, :foreign_key => :parent_id, :class_name => "ListHierarchyRelationship"
   has_many :children, :through =>  :is_parent_relationships, :source => :child
 
+  # LHR association scratch work
+=begin
   # switch order of declaration (would expect to make .children work)
   # => yes: worked as expected
   # # # par.children =>  CHI*   ON `list_items`.`id` = `LHR`.`child_id` WHERE `LHR`.`parent_id` = 1
@@ -120,9 +123,10 @@ class ListItem < ApplicationRecord
   # has_many :children, :through =>  :parental_relationships, :source => :child
 
 
+=end
 
 
-  # attachments
+  # attachments --> TO DO later
 
 
 
