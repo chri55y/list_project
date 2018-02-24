@@ -2,3 +2,9 @@
 
 <h1>List Items (h1)</h1>
 
+<% @list_items.each do |item| %>
+  <div>
+    <p>ID   <%= item.id %></p>
+    <p>Name <%= item.name %></p>
+  </div>
+<% end %>
