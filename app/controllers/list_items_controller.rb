@@ -7,6 +7,7 @@ class ListItemsController < ApplicationController
 =end    ############################################
 
   def index
+    @list_items = ListItem.all
   end
 
   def show

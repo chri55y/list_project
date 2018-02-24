@@ -129,6 +129,7 @@ class ListItem < ApplicationRecord
   # attachments --> TO DO later
 
 
+  # scopes
 
 
 
