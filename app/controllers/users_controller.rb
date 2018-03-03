@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+
   def index
   end
 
@@ -25,4 +28,15 @@ class UsersController < ApplicationController
   def destroy
 
   end
+
+  private
+    # before action for show, edit, update, and destroy
+    def set_user
+      @user = User.find(params[:id])
+    end
+
+    def user_params
+      # TBD
+    end
+
 end
