@@ -1,4 +1,6 @@
 class ListUsersController < ApplicationController
+  before_action :set_list_user, only: [:show, :edit, :update, :destroy]
+
   def index
   end
 
@@ -25,4 +27,13 @@ class ListUsersController < ApplicationController
   def destroy
 
   end
+
+  private
+  # before action for show, edit, update, and destroy
+  def set_list_user
+    @list_user = ListUser.find(params[:id])
+  end
+
+
+  
 end
